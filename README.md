@@ -1,10 +1,3 @@
-Here's a polished, professional `README.md` for your **SeeNavi** project — tailored for GitHub and showcasing its real-world impact and features:
-
----
-
-## ✅ `README.md` for SeeNavi
-
-````markdown
 # 👁️ SeeNavi – Real-Time Scene Narration for the Visually Impaired
 
 **SeeNavi** is a voice-controlled iOS app designed to assist visually impaired users by narrating their surroundings using advanced machine learning models. Powered by on-device camera access, speech recognition, OCR, and object detection, SeeNavi delivers hands-free, real-time scene understanding.
@@ -24,89 +17,106 @@ Here's a polished, professional `README.md` for your **SeeNavi** project — tai
   - “take photo” (hands-free capture)
 - 🗣 **Speech Narration** – Speaks all outputs aloud using AVSpeechSynthesizer
 - 📱 **Camera Integration** – Seamless live preview with voice-triggered photo capture
+- 🔁 **Continuous Voice Control** – Automatically restarts listening after every action
+- 🟢 **Real-Time Feedback** – “Listening...” and “Processing...” indicators
 
 ---
 
-## 🛠 Technologies
+## 🧭 User Flow – Designed for the Visually Impaired
 
-- **SwiftUI** – Modern declarative UI framework
-- **AVFoundation** – For audio output and speech synthesis
-- **Speech Framework** – Real-time voice recognition
-- **Vision Framework** – On-device OCR and object detection
-- **CoreML** – Optional integration with BLIP or other ML models
-- **Python Flask Server** – Image captioning backend (using `transformers`)
+SeeNavi provides a fully voice-driven loop designed to minimize screen interaction:
+
+1. **Launch the app**
+2. **Speak a command** such as:
+   - “capture scene”
+   - “read text”
+   - “detect objects”
+   - “replay caption”
+3. App provides **audio feedback**:
+   - “🎙 Listening...”
+   - “⏳ Processing...”
+4. SeeNavi **analyzes the camera image** and **narrates** results
+5. App automatically **restarts listening** for the next command
+
+> No taps required — designed for continuous, natural hands-free use.
 
 ---
 
 ## 📲 Screenshots
 
-| Main View | Camera | Voice Commands |
-|-----------|--------|----------------|
-| ![Main](screenshots/main.png) | ![Camera](screenshots/camera.png) | ![Voice](screenshots/voice.png) |
+> Upload your screenshots to a `screenshots/` folder and replace the filenames below.
+
+| Home View | Camera | Listening Feedback |
+|-----------|--------|--------------------|
+| ![Main](screenshots/main-view.png) | ![Camera](screenshots/camera-view.png) | ![Voice](screenshots/voice-feedback.png) |
+
+---
+
+## 🛠 Technologies
+
+- **SwiftUI** – Declarative native UI
+- **AVFoundation** – Text-to-speech narration
+- **Speech Framework** – Live voice command recognition
+- **Vision Framework** – OCR & object detection
+- **CoreML** – For local ML integration (optional)
+- **Python Flask** – Captioning backend with BLIP model from HuggingFace
 
 ---
 
 ## 🚀 Getting Started
 
-### 📦 Requirements
+### Requirements
 
-- Xcode 15+
-- iOS 15+ device (real device required for camera/mic)
-- Apple Developer Account (for deployment)
-- Python backend with HuggingFace Transformers
+- macOS + Xcode 15+
+- iOS 15+ physical device (camera/mic access required)
+- Python 3.8+ for backend
+- Apple Developer Account for deployment (optional)
 
-### 📂 Setup
+### Setup
 
 1. Clone this repo:
    ```bash
-   git clone https://github.com/yourusername/SeeNavi.git
+   git clone https://github.com/YOUR_USERNAME/SeeNavi.git
    cd SeeNavi
-````
 
-2. Open in Xcode:
 
-   ```bash
-   open SeeNavi.xcodeproj
-   ```
-
-3. Run the Python backend:
+2. Run the Python BLIP backend:
 
    ```bash
-   pip install transformers flask torch pillow
+   pip install flask transformers torch pillow
    python decoder.py
    ```
 
-4. Update IP in `ImageCaptioner.swift` to your server IP:
+3. Update IP in `ImageCaptioner.swift`:
 
    ```swift
-   let url = URL(string: "http://<your-ip>:5005/decode")!
+   let url = URL(string: "http://<your-local-ip>:5005/decode")!
    ```
 
-5. Run the app on a physical device.
+4. Open the project in Xcode and run on a real iPhone.
 
 ---
 
-## 🧪 Voice Commands
+## 🧪 Voice Commands Summary
 
-| Command          | Action                             |
-| ---------------- | ---------------------------------- |
-| "capture scene"  | Captures and describes the scene   |
-| "read text"      | Performs OCR on image              |
-| "detect objects" | Detects objects with spatial hints |
-| "take photo"     | Triggers capture in camera         |
-| "replay caption" | Repeats last spoken output         |
+| Command          | Function                             |
+| ---------------- | ------------------------------------ |
+| "capture scene"  | Takes photo & generates caption      |
+| "read text"      | Extracts printed or handwritten text |
+| "detect objects" | Lists objects in view with position  |
+| "replay caption" | Repeats last spoken result           |
+| "take photo"     | Triggers camera hands-free           |
 
 ---
 
 ## 📃 License
 
-This project is licensed under the MIT License.
-Feel free to modify and distribute — attribution appreciated.
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
 ## ❤️ Credits
 
-Built by [Yash Amre](https://github.com/YashAmre)
-Model by [Salesforce BLIP](https://huggingface.co/Salesforce/blip-image-captioning-base)
-Special thanks to the accessibility and open-source communities.
+Developed by [Yash Amre](https://github.com/YashAmre)
+Image captioning powered by [Salesforce BLIP](https://huggingface.co/Salesforce/blip-image-captioning-base)
+Built with love for accessibility and inclusion.
