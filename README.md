@@ -48,7 +48,7 @@ SeeNavi provides a fully voice-driven loop designed to minimize screen interacti
 
 | Home View | Camera | Listening Feedback |
 |-----------|--------|--------------------|
-| ![Main](screenshots/main-view.png) | ![Camera](screenshots/camera-view.png) | ![Voice](screenshots/voice-feedback.png) |
+| ![Main][screenshots/main-view.png](https://github.com/yashamre/SeeNavi-Real-Time-Scene-Narrator/blob/7c5b0a1d61a6c6e252e450b0ec121c661a9eb158/Screenshots/Interface.jpeg) | ![Camera](screenshots/camera-view.png) | ![Voice](screenshots/voice-feedback.png) |
 
 ---
 
