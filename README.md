@@ -46,9 +46,9 @@ SeeNavi provides a fully voice-driven loop designed to minimize screen interacti
 
 > Upload your screenshots to a `screenshots/` folder and replace the filenames below.
 
-| Home View | Camera | Listening Feedback |
-|-----------|--------|--------------------|
-| ![Main](https://github.com/yashamre/SeeNavi-Real-Time-Scene-Narrator/blob/7c5b0a1d61a6c6e252e450b0ec121c661a9eb158/Screenshots/Interface.jpeg) | ![Camera](screenshots/camera-view.png) | ![Voice](screenshots/voice-feedback.png) |
+| Home View | Camera | Processing | Output |
+|-----------|--------|--------------------|-----------------|
+| ![Main](https://github.com/yashamre/SeeNavi-Real-Time-Scene-Narrator/blob/7c5b0a1d61a6c6e252e450b0ec121c661a9eb158/Screenshots/Interface.jpeg) | ![Camera](https://github.com/yashamre/SeeNavi-Real-Time-Scene-Narrator/blob/04f7707dcfdf907d108d8c9f1c13e881b6cfd20e/Screenshots/Camera.jpeg) | ![Voice](https://github.com/yashamre/SeeNavi-Real-Time-Scene-Narrator/blob/04f7707dcfdf907d108d8c9f1c13e881b6cfd20e/Screenshots/Processing.jpeg) | ![Output]
 
 ---
 
