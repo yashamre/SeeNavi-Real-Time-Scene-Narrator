@@ -107,16 +107,5 @@ SeeNavi provides a fully voice-driven loop designed to minimize screen interacti
 | "replay caption" | Repeats last spoken result           |
 | "take photo"     | Triggers camera hands-free           |
 
----
-
-## 📃 License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ---
-
-## ❤️ Credits
-
-Developed by [Yash Amre](https://github.com/YashAmre)
-Image captioning powered by [Salesforce BLIP](https://huggingface.co/Salesforce/blip-image-captioning-base)
-Built with love for accessibility and inclusion.
